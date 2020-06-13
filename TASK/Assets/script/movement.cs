@@ -12,13 +12,14 @@ public class movement : MonoBehaviour
 
     public void flip(bool lr)
     {
-        if (leftright == flipright)
+        if (leftright != flipright)
         {
             flipright = !flipright;
             Vector2 thescale = transform.localScale;
             thescale.x *= -1;
             transform.localScale = thescale;
         }
+       
         
     }
 
@@ -26,24 +27,27 @@ public class movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.UpArrow))
         {
+            anim.enabled = true;
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 leftright = true;
                 flip(leftright);
-                anim.enabled = true;
+              
                 Vector3 position = this.transform.position;
                 position.x -= speed;
                 this.transform.position = position;
             }
+           
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                leftright = true;
+                leftright = false;
                 flip(leftright);
-                anim.enabled = true;
+                
                 Vector3 position = this.transform.position;
                 position.x += speed;
                 this.transform.position = position;
             }
+         
             if (Input.GetKey(KeyCode.DownArrow))
             {
                 Vector3 position = this.transform.position;
@@ -60,6 +64,7 @@ public class movement : MonoBehaviour
         else
         {
             anim.enabled = false;
+            leftright = false;
         }
 
     }
