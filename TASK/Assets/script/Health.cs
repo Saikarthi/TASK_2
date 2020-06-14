@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
     {
         if (co.gameObject.tag == "virus")
         {
-            health += 10;
+            health += 5;
             
             if (health < 0)
             {

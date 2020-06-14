@@ -5,7 +5,7 @@ using UnityEngine;
 public class MaskSpawnerControl : MonoBehaviour {
 
 	public Transform[] spawnPoints;
-	public GameObject virus;
+	public GameObject mask;
     int randomSpawnPoint;
 	public static bool spawnAllowed;
     private GameObject[] gos;
@@ -19,8 +19,8 @@ public class MaskSpawnerControl : MonoBehaviour {
      void Update()
     {
        
-        gos = GameObject.FindGameObjectsWithTag("virus");
-        if (gos.Length < 20)
+        gos = GameObject.FindGameObjectsWithTag("mask");
+        if (gos.Length < 1)
         {
             spawnAllowed = true;
              SpawnAMonster();
@@ -37,7 +37,7 @@ public class MaskSpawnerControl : MonoBehaviour {
 		if (spawnAllowed) {
 			randomSpawnPoint = Random.Range (0, spawnPoints.Length);
 			
-			Instantiate (virus, spawnPoints [randomSpawnPoint].position,
+			Instantiate (mask, spawnPoints [randomSpawnPoint].position,
 				Quaternion.identity);
 		}
 	}

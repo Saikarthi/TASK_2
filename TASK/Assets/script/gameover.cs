@@ -5,6 +5,7 @@ using UnityEngine;
 public class gameover : MonoBehaviour
 {
     public GameObject a, b,c,player;
+    public score s;
     public Health h;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class gameover : MonoBehaviour
     {
         if(h.health >= 50)
         {
+            s.enabled = false;
             player.SetActive(false);
             c.SetActive(true);
             a.SetActive(true);
