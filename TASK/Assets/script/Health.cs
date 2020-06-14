@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    private float health =0f;
+    public float health =0f;
 
     public Image greeen,red;
     private float a = 0f, b = 0.5f, c = 1f;
+
+    public health_update h;
 
 
     // Start is called before the first frame update
@@ -24,14 +26,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         Debug.Log(health);
-        if(health<0)
-        {
-            health = 0;
-        }
-        if (health  > 50)
-        {
-            health = 50;
-        }
+
     }
 
     public void OnCollisionEnter2D(Collision2D co)
@@ -39,6 +34,16 @@ public class Health : MonoBehaviour
         if (co.gameObject.tag == "virus")
         {
             health += 5;
+            
+            if (health < 0)
+            {
+                health = 0;
+            }
+            if (health > 50)
+            {
+                health = 50;
+            }
+            h.die();
             Debug.Log("dieing soon");
             Destroy(co.gameObject);
             var temp = red.color;
@@ -49,6 +54,16 @@ public class Health : MonoBehaviour
         if (co.gameObject.tag == "mask")
         {
             health -= 10;
+            
+            if (health < 0)
+            {
+                health = 0;
+            }
+            if (health > 50)
+            {
+                health = 50;
+            }
+            h.die();
             Destroy(co.gameObject);
             var temp = greeen.color;
             temp.a = c;
