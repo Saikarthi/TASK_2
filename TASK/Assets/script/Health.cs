@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     public health_update h;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         Debug.Log(health);
+        
 
     }
 

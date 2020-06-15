@@ -7,6 +7,8 @@ TagManager:
   - wall
   - mask
   - virus
+  - myth
+  - fact
   layers:
   - Default
   - TransparentFX
