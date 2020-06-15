@@ -8244,6 +8244,8 @@ MonoBehaviour:
   anim: {fileID: 1980854006}
   flipright: 0
   leftright: 0
+  run: {fileID: 9100000, guid: 3e931db7f9e185a49a03cffaf2d99b46, type: 2}
+  r: {fileID: 9100000, guid: f790fed385a72714f84b41032d514034, type: 2}
 --- !u!95 &1980854006
 Animator:
   serializedVersion: 3
