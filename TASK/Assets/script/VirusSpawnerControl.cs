@@ -20,7 +20,7 @@ public class VirusSpawnerControl : MonoBehaviour {
     {
        
         gos = GameObject.FindGameObjectsWithTag("virus");
-        if (gos.Length < 40)
+        if (gos.Length < 20)
         {
             spawnAllowed = true;
              SpawnAMonster();

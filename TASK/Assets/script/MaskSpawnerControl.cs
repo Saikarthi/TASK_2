@@ -20,7 +20,7 @@ public class MaskSpawnerControl : MonoBehaviour {
     {
        
         gos = GameObject.FindGameObjectsWithTag("mask");
-        if (gos.Length < 1)
+        if (gos.Length < 4)
         {
             spawnAllowed = true;
              SpawnAMonster();
