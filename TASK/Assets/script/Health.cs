@@ -55,7 +55,7 @@ public class Health : MonoBehaviour
         }
         if (co.gameObject.tag == "mask")
         {
-            health -= 10;
+            health -= 5;
             
             if (health < 0)
             {
