@@ -26,6 +26,6 @@ public class help : MonoBehaviour
     }
     public void playgame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
