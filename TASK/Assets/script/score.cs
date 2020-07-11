@@ -16,6 +16,6 @@ public class score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t.text = Time.fixedTime.ToString("0");
+        t.text = Time.timeSinceLevelLoad.ToString("0");
     }
 }
