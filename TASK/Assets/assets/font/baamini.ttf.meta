@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c6efd91fca1fe8e4ca30b1be791e8279
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Baamini
+  fontNames:
+  - Baamini
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ecc9af21a3959a14f931eb5bcf4cf9e6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

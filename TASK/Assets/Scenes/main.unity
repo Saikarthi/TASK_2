@@ -2851,14 +2851,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 643349083}
   - {fileID: 1381824503}
   m_Father: {fileID: 1584818858}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -244.6}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0.000011444, y: -251}
+  m_SizeDelta: {x: 271.78293, y: 37.114914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634766086
 MonoBehaviour:
@@ -2950,6 +2951,84 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634766084}
+  m_CullTransparentMesh: 0
+--- !u!1 &643349082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643349083}
+  - component: {fileID: 643349085}
+  - component: {fileID: 643349084}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &643349083
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643349082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 634766085}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015736, y: 0.0000014415}
+  m_SizeDelta: {x: 271.78296, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &643349084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643349082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.69803923, g: 0.13333334, b: 0.13333334, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c6efd91fca1fe8e4ca30b1be791e8279, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 207
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\r\u0B8E\u0BA9\u0BCD\u0BA9\u0BC8 \u0B95\u0BBE\u0BAA\u0BCD\u0BAA\u0BBE\u0BB1\u0BCD\u0BB1\u0BC1\u0B99\u0BCD\u0B95\u0BB3\u0BCD"
+--- !u!222 &643349085
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643349082}
   m_CullTransparentMesh: 0
 --- !u!1 &711997702
 GameObject:
@@ -5935,7 +6014,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 634766085}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5961,18 +6040,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: save me
+  m_text: SAVE ME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b6a75c9a7e055c42a5ebaa6efd898d6, type: 2}
-  m_sharedMaterial: {fileID: -253935637920556766, guid: 4b6a75c9a7e055c42a5ebaa6efd898d6,
+  m_fontAsset: {fileID: 11400000, guid: f170115431d6baa488b1fb57ca2d1b32, type: 2}
+  m_sharedMaterial: {fileID: 5407796867902832455, guid: f170115431d6baa488b1fb57ca2d1b32,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4285098495
+  m_fontColor: {r: 1, g: 0.41037738, b: 0.41037738, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
