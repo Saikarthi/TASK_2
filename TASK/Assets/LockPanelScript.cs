@@ -24,6 +24,13 @@ public class LockPanelScript : MonoBehaviour
                 LockPanel.SetActive(false);
 
             }
+            else if (codeField.text.Equals("TAMIL"))//Changed the code based on your clients/requirement..
+            {
+                //start the game 
+                SceneManager.LoadScene(3);
+                LockPanel.SetActive(false);
+
+            }
             else
             {
                 //wrong pass code
