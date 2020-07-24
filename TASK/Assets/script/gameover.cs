@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class gameover : MonoBehaviour
 {
-    public GameObject a, b,c,player;
+    public GameObject a, b,c,player,joystick,ou,inn;
     public score s;
     public Health h;
     public GameObject saveme,restart;
     private int loadscene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,9 @@ public class gameover : MonoBehaviour
         {
             saveme.SetActive(false);
             restart.SetActive(true);
+            joystick.SetActive(false);
+            ou.SetActive(false);
+            inn.SetActive(false);
             s.enabled = false;
             player.SetActive(false);
             c.SetActive(true);

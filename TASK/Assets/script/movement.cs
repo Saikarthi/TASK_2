@@ -10,6 +10,7 @@ public class movement : MonoBehaviour
     public bool leftright;
     public RuntimeAnimatorController run;
     public RuntimeAnimatorController r;
+    public joys j;
 
 
     public void flip(bool lr)
@@ -66,9 +67,18 @@ public class movement : MonoBehaviour
         }
         else
         {
-            anim.GetComponent<Animator>().runtimeAnimatorController = r as RuntimeAnimatorController;
-            anim.enabled = false;
-            leftright = false;
+                leftright = false;
+        }
+        if(Input.GetKey(KeyCode.UpArrow) ||Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) || j.move)
+        {
+       
+            
+            
+        }
+        else
+        {
+             anim.enabled = false;
+            
         }
 
     }
